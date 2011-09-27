@@ -1,0 +1,716 @@
+Sun, 11 Sep 2011 07:58:06 +0000 112 start task id 112 512 kilobytes
+Sun, 11 Sep 2011 07:58:06 +0000 112 using proxy is on, use short services is off, loading accounts with error is off, shorters is off 512 kilobytes
+string(115) "SELECT * FROM `9a20cd9d6421ed2d6d30d38172f6a237_accounts` WHERE error='good' OR error='' ORDER BY RAND() LIMIT 100;"
+Sun, 11 Sep 2011 07:58:06 +0000 112 total accounts - 100 512 kilobytes
+Sun, 11 Sep 2011 07:58:06 +0000 112 task type is tweets 512 kilobytes
+string(117) "RT @SKYENICOLAS "Only nouveau riche would chop cocaine with a black Amex card" ~SN  TheMRK.com http://on.fb.me/lV6b8p"
+Sun, 11 Sep 2011 07:58:06 +0000 112 formed 1 items in post array 512 kilobytes
+123Sun, 11 Sep 2011 07:58:06 +0000 112 using bananaanb:x1zc2tyx9 0/100 512 kilobytes
+Sun, 11 Sep 2011 07:58:08 +0000 112 proxy 78.159.112.45:48075 512 kilobytes
+Sun, 11 Sep 2011 07:58:20 +0000 112 logged in succesfully, trying to post in 0 512 kilobytes
+string(95) "RT @SKYENICOLAS "Only nouveau riche would chop cocaine with a black Amex card" ~SN  TheMRK.com "
+string(79) " "Only nouveau riche would chop cocaine with a black Amex card" ~SN  TheMRK.com"
+string(56362) "<html>
+<head>
+<script type="text/javascript">
+//<![CDATA[
+if (window.top !== window.self) {document.write = "";window.top.location = window.self.location; setTimeout(function(){document.body.innerHTML='';},1);window.self.onload=function(evt){document.body.innerHTML='';};}
+
+//]]>
+</script>
+<link href="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/assets/base.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://a3.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/assets/desktop.css" media="screen" rel="stylesheet" type="text/css" />
+<script type='text/javascript'>
+  //<![CDATA[
+    var M2 = {
+      auth_token: "07890b5e262359501d95"
+    }
+  //]]>
+</script>
+
+<link href='http://a2.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/apple-touch-icon-114.png' rel='apple-touch-icon-precomposed' />
+<link href='http://a2.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/ic_fav_alpha_32.png' rel='icon' type='image/png' />
+<link href='http://a2.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/startup.png' rel='apple-touch-startup-image' />
+<title>
+Twitter
+</title>
+<meta content='True' name='HandheldFriendly' />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+</head>
+<body class='  '>
+<div id='main'>
+<div class='timeline-head'>
+<div></div>
+<a href="http://mobile.twitter.com/"><span alt="Twitter" class="imgsprite_logo_gif"></span></a>
+<span class='refreshImgC'><a href="/"><span class="imgsprite_ic_reload_png"></span>Refresh</a></span>
+</div>
+<br clear='all' id='begin-warning' />
+<div class='tweetbox'>
+<form action="http://mobile.twitter.com/" class="new_tweet" id="new_tweet" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+<div class='tweetbox-head'>What's happening?</div>
+<div class='tweetbox-counter' id='tweetbox_counter'>140</div>
+<textarea class="tweet_input" cols="44" id="tweet_text" name="tweet[text]" rows="2"></textarea>
+<button class="tweet-btns" id="tweet_submit" type="submit">Tweet</button>
+<br />
+<input id="tweet_in_reply_to_status_id" name="tweet[in_reply_to_status_id]" type="hidden" />
+<input id="tweet_lat" name="tweet[lat]" type="hidden" />
+<input id="tweet_long" name="tweet[long]" type="hidden" />
+<input id="tweet_place_id" name="tweet[place_id]" type="hidden" />
+<input id="tweet_display_coordinates" name="tweet[display_coordinates]" type="hidden" />
+<div class='tweetbox-status'>
+<div id='geo-status'></div>
+&nbsp;
+<div class='strong' id='geo-promo'></div>
+</div>
+</form>
+</div>
+
+<div id='hide-for-map'>
+<div class='timeline-header' style='text-align: left'>
+<a href="http://mobile.twitter.com/" accesskey="1" class="timeline-header-selected">Home</a>
+&nbsp;
+<a href="http://mobile.twitter.com/replies" accesskey="6" class="">Mentions</a>
+&nbsp;
+<a href="http://mobile.twitter.com/favorites" accesskey="4" class="">Favs</a>
+&nbsp;
+<a href="http://mobile.twitter.com/inbox" accesskey="3" class="">Msgs</a>
+</div>
+
+<div class='timeline autorefresh'>
+
+<div id='tweets-list'>
+<div class='list-tweet' id='tweet_112797115171872769'>
+<a href="http://mobile.twitter.com/bananaanb"><img alt="Moises Gee" class="list-tweet-img" src="http://a1.twimg.com/sticky/default_profile_images/default_profile_2_normal.png" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/bananaanb">bananaanb</a></strong>
+<span class="status">RT @<a href="/SKYENICOLAS" class="twitter-atreply">SKYENICOLAS</a> "Only nouveau riche would chop cocaine with a black Amex card" ~SN  TheMRK.com <a rel="nofollow" href="http://t.co/ydoBqnf" target="_blank" class="twitter_external_link">on.fb.me/lV6b8p</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/bananaanb/status/112797115171872769" class="status_link">less than a minute ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112797115171872769/delete"><span class="imgsprite_ic_delete_gif"></span></a>
+<form action="/statuses/112797115171872769/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112797115171872769/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112795173188153344'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Revista de imprensa: destaques de "O Jogo" <a rel="nofollow" href="http://t.co/8ijGTnJ" target="_blank" class="twitter_external_link">publico.pt/1511372</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112795173188153344" class="status_link">8 minutes ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112795173188153344/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112795173188153344/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112795173188153344/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112795173188153344/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112793964280688640'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Revista de imprensa: destaques do "Record" <a rel="nofollow" href="http://t.co/Lk5ZZTr" target="_blank" class="twitter_external_link">publico.pt/1511371</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112793964280688640" class="status_link">13 minutes ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112793964280688640/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112793964280688640/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112793964280688640/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112793964280688640/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112792865301729280'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Revista de imprensa: destaques de "A Bola" <a rel="nofollow" href="http://t.co/UGEVNC2" target="_blank" class="twitter_external_link">publico.pt/1511370</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112792865301729280" class="status_link">17 minutes ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112792865301729280/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112792865301729280/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112792865301729280/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112792865301729280/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112791972040814592'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Revista de imprensa: destaques do "Jornal de Notícias" <a rel="nofollow" href="http://t.co/02HxlZp" target="_blank" class="twitter_external_link">publico.pt/1511369</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112791972040814592" class="status_link">20 minutes ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112791972040814592/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112791972040814592/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112791972040814592/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112791972040814592/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112790620778676224'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Revista de imprensa: destaques do "Correio da Manhã" <a rel="nofollow" href="http://t.co/vAvFk6C" target="_blank" class="twitter_external_link">publico.pt/1511368</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112790620778676224" class="status_link">26 minutes ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112790620778676224/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112790620778676224/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112790620778676224/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112790620778676224/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112789342405144577'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Revista de imprnesa: destaques do "Diário de Notícias" <a rel="nofollow" href="http://t.co/7PfMqjh" target="_blank" class="twitter_external_link">publico.pt/1511367</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112789342405144577" class="status_link">31 minutes ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112789342405144577/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112789342405144577/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112789342405144577/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112789342405144577/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112788634184335360'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Revista de imprensa: destaques do PÚBLICO <a rel="nofollow" href="http://t.co/IdS1iyI" target="_blank" class="twitter_external_link">publico.pt/1511366</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112788634184335360" class="status_link">34 minutes ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112788634184335360/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112788634184335360/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112788634184335360/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112788634184335360/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112788096382283777'>
+<a href="http://mobile.twitter.com/macroscope"><img alt="MacroScope" class="list-tweet-img" src="http://a1.twimg.com/profile_images/1462447487/reuters_twitter_avatar_normal.png" /></a>
+<div class='inner-w-img'>
+<span>
+<span class="imgsprite_ic_retweet_tweet_gif"></span>
+<strong><a href="http://mobile.twitter.com/macroscope">MacroScope</a></strong>
+<span class="status">Papandreou says to save <a href="/searches?q=%23Greece" class="twitter-hashtag">#Greece</a>, stay in <a href="/searches?q=%23euro" class="twitter-hashtag">#euro</a> <a rel="nofollow" href="http://t.co/gn3rMJT" target="_blank" class="twitter_external_link">reut.rs/rlAZvo</a> but <a href="/searches?q=%23Germany" class="twitter-hashtag">#Germany</a> may have different plans <a rel="nofollow" href="http://t.co/sX2OFiX" target="_blank" class="twitter_external_link">reuters.com/article/2011/0…</a> <a href="/searches?q=%23economy" class="twitter-hashtag">#economy</a> <a href="/searches?q=%23forex" class="twitter-hashtag">#forex</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/macroscope/status/112708478996451328" class="status_link">about 6 hours ago</a>
+
+</div>
+<br class='r' />
+<div class='retweet-info'>
+<a href="/macroscope/status/112708478996451328" class="status_link">Retweeted by carlosavargas</a>
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112788096382283777/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112788096382283777/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112788096382283777/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112788096382283777/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112784515746902017'>
+<a href="http://mobile.twitter.com/iamjpierce"><img alt="Justin Pierce" class="list-tweet-img" src="http://a2.twimg.com/profile_images/1527489389/JPmural_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/iamjpierce">iamjpierce</a></strong>
+<span class="status">RT @<a href="/AlecClawson" class="twitter-atreply">AlecClawson</a>: First concept video uploading now! Are you ready?! @<a href="/Art0fficialEnt" class="twitter-atreply">Art0fficialEnt</a> @<a href="/ChrisDavid315" class="twitter-atreply">ChrisDavid315</a> @<a href="/tylerthecreator" class="twitter-atreply">tylerthecreator</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/iamjpierce/status/112784515746902017" class="status_link">about 1 hour ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112784515746902017/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112784515746902017/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112784515746902017/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112784515746902017/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112783210315923456'>
+<a href="http://mobile.twitter.com/iamjpierce"><img alt="Justin Pierce" class="list-tweet-img" src="http://a2.twimg.com/profile_images/1527489389/JPmural_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/iamjpierce">iamjpierce</a></strong>
+<span class="status">To the TOOOOOOOPPP of the mountain! I GO!</span>
+</span>
+<div class='list-tweet-status'>
+<a href="/iamjpierce/status/112783210315923456" class="status_link">about 1 hour ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112783210315923456/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112783210315923456/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112783210315923456/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112783210315923456/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112767506380374016'>
+<a href="http://mobile.twitter.com/publico"><img alt="Jornal Público" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1140030306/Plogo_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/publico">Publico</a></strong>
+<span class="status">Itália resistiu à candidata Austrália durante 50 minutos <a rel="nofollow" href="http://t.co/jSSVV4x" target="_blank" class="twitter_external_link">publico.pt/1511363</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/publico/status/112767506380374016" class="status_link">about 2 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112767506380374016/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112767506380374016/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112767506380374016/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112767506380374016/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112763544554061824'>
+<a href="http://mobile.twitter.com/iamjpierce"><img alt="Justin Pierce" class="list-tweet-img" src="http://a2.twimg.com/profile_images/1527489389/JPmural_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/iamjpierce">iamjpierce</a></strong>
+<span class="status">Too all the families involved in 9/11! <a href="/searches?q=%23WeWillNeverForget" class="twitter-hashtag">#WeWillNeverForget</a> <a href="/searches?q=%23LOVE" class="twitter-hashtag">#LOVE</a>!</span>
+</span>
+<div class='list-tweet-status'>
+<a href="/iamjpierce/status/112763544554061824" class="status_link">about 2 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112763544554061824/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112763544554061824/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112763544554061824/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112763544554061824/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112762525514342400'>
+<a href="http://mobile.twitter.com/iamjpierce"><img alt="Justin Pierce" class="list-tweet-img" src="http://a2.twimg.com/profile_images/1527489389/JPmural_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/iamjpierce">iamjpierce</a></strong>
+<span class="status">I wanna help, and show love to the people who never get it!</span>
+</span>
+<div class='list-tweet-status'>
+<a href="/iamjpierce/status/112762525514342400" class="status_link">about 2 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112762525514342400/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112762525514342400/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112762525514342400/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112762525514342400/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112761604688453632'>
+<a href="http://mobile.twitter.com/iamjpierce"><img alt="Justin Pierce" class="list-tweet-img" src="http://a2.twimg.com/profile_images/1527489389/JPmural_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/iamjpierce">iamjpierce</a></strong>
+<span class="status">RT @<a href="/DamienDW" class="twitter-atreply">DamienDW</a>: WOW... The 10 YEAR ANNIVERSARY of a LIFE CHANGING MOMENT in AMERICAN HISTORY is UPON us... 9/11... <a href="/searches?q=%23Prayers" class="twitter-hashtag">#Prayers</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/iamjpierce/status/112761604688453632" class="status_link">about 2 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112761604688453632/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112761604688453632/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112761604688453632/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112761604688453632/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112761340552167424'>
+<a href="http://mobile.twitter.com/iamjpierce"><img alt="Justin Pierce" class="list-tweet-img" src="http://a2.twimg.com/profile_images/1527489389/JPmural_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/iamjpierce">iamjpierce</a></strong>
+<span class="status">Heads up, <a href="/searches?q=%23Focused" class="twitter-hashtag">#Focused</a>!</span>
+</span>
+<div class='list-tweet-status'>
+<a href="/iamjpierce/status/112761340552167424" class="status_link">about 2 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112761340552167424/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112761340552167424/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112761340552167424/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112761340552167424/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112761093310521344'>
+<a href="http://mobile.twitter.com/damiendw"><img alt="Damien Dante Wayans" class="list-tweet-img" src="http://a3.twimg.com/profile_images/1420588199/313201020_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<span class="imgsprite_ic_retweet_tweet_gif"></span>
+<strong><a href="http://mobile.twitter.com/damiendw">DamienDW</a></strong>
+<span class="status">JUDGE NO1 if u 1st can't JUDGE urself...</span>
+</span>
+<div class='list-tweet-status'>
+<a href="/damiendw/status/112757665268109312" class="status_link">about 3 hours ago</a>
+
+</div>
+<br class='r' />
+<div class='retweet-info'>
+<a href="/damiendw/status/112757665268109312" class="status_link">Retweeted by iamjpierce</a>
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112761093310521344/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112761093310521344/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112761093310521344/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112761093310521344/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112756518532812801'>
+<a href="http://mobile.twitter.com/loganhef"><img alt="Graham Tuttle" class="list-tweet-img" src="http://a3.twimg.com/profile_images/822893260/362_normal.gif" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/loganhef">loganhef</a></strong>
+<span class="status">Unilaterally Assured Destruction - By Barry Pavel and Matthew Kroenig <a rel="nofollow" href="http://t.co/hr06n5w" target="_blank" class="twitter_external_link">foreignpolicy.com/articles/2011/…</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/loganhef/status/112756518532812801" class="status_link">about 3 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112756518532812801/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112756518532812801/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112756518532812801/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112756518532812801/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112748127643123712'>
+<a href="http://mobile.twitter.com/lisbondaily"><img alt="Lisbon Daily" class="list-tweet-img" src="http://a2.twimg.com/profile_images/1225147967/Lisbon_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/lisbondaily">LisbonDaily</a></strong>
+<span class="status">Lisbon Police Reports for 9-11  <a rel="nofollow" href="http://t.co/eSdTRrB" target="_blank" class="twitter_external_link">sns.mx/SCfNy4</a></span>
+</span>
+<div class='list-tweet-status'>
+<a href="/lisbondaily/status/112748127643123712" class="status_link">about 3 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112748127643123712/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112748127643123712/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112748127643123712/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112748127643123712/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+<div class='list-tweet' id='tweet_112746729694171136'>
+<a href="http://mobile.twitter.com/maraajardiim"><img alt="Mara Jardim" class="list-tweet-img" src="http://a0.twimg.com/profile_images/1535328995/SAM_1677_normal.jpg" /></a>
+<div class='inner-w-img'>
+<span>
+<strong><a href="http://mobile.twitter.com/maraajardiim">MaraaJardiim</a></strong>
+<span class="status">vou dormir um pouco que vai ser melhor. bjo twitz</span>
+</span>
+<div class='list-tweet-status'>
+<a href="/maraajardiim/status/112746729694171136" class="status_link">about 3 hours ago</a>
+
+</div>
+<div class='list-tweet-actions'>
+<a href="http://mobile.twitter.com/statuses/112746729694171136/compose_reply"><span class="imgsprite_ic_reply_gif"></span></a>
+<form action="/statuses/112746729694171136/retweet" buttonclass="imgsprite_ic_retweet_gif" class="tweet_action_form retweet_button" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_retweet_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+<form action="/statuses/112746729694171136/favorite" buttonclass="imgsprite_ic_fave_gif" class="tweet_action_form favorite_button tweet_action_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_fave_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form><form action="/statuses/112746729694171136/unfavorite" buttonclass="imgsprite_ic_faveon_gif" class="tweet_action_form favorite_button tweet_action_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+
+    <input type="hidden" name="authenticity_token" value="07890b5e262359501d95" />
+    <input class="imgsprite_ic_faveon_gif" src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/1x1.gif" type="image" /></form>
+</div>
+</div>
+</div>
+
+</div>
+<div align='center'>
+<div class='list-more'>
+<img alt="Ic_spinner_more" src="http://a3.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/images/ic_spinner_more.gif" /><a href="/?max_id=112746607967084544" id="more_link">more</a>
+</div>
+</div>
+</div>
+<div class='timeline-user'>
+<a href="http://mobile.twitter.com/bananaanb"><img alt="Moises Gee" class="list-tweet-img" src="http://a1.twimg.com/sticky/default_profile_images/default_profile_2_normal.png" /></a>
+<div class='inner-w-img'>
+<div>
+<b>bananaanb</b>
+</div>
+<div>
+<a href="http://mobile.twitter.com/bananaanb/following">Following&nbsp;<strong>32</strong></a>,
+<a href="http://mobile.twitter.com/bananaanb/followers">Followers
+<strong>0</strong>
+</a></div>
+<div class='timeline-user-status'>
+<b>Last update:</b>
+<span class="status">RT @<a href="/SKYENICOLAS" class="twitter-atreply">SKYENICOLAS</a> "Only nouveau riche would chop cocaine with a black Amex card" ~SN  TheMRK.com <a rel="nofollow" href="http://t.co/ydoBqnf" target="_blank" class="twitter_external_link">on.fb.me/lV6b8p</a></span>
+</div>
+</div>
+</div>
+
+<div id='search_footer'>
+<form action="http://mobile.twitter.com/searches" class="search" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+Search Twitter
+<br />
+<input class="search-form" id="search_query" name="search[query]" size="20" type="text" value="" />
+<button class="search-btns" id="" type="submit">Search</button>
+</form>
+<div class='search-middle'>Popular Topics</div>
+<div class='search-trends'>
+<ul id='trend_footer_list'>
+<li><a href="http://mobile.twitter.com/searches?q=%22Today+is+9-10-11%22">Today is 9-10-11</a></li>
+<li><a href="http://mobile.twitter.com/searches?q=%22Free+Spirit%22">Free Spirit</a></li>
+<li><a href="http://mobile.twitter.com/searches?q=%22RIP+9%22">RIP 9</a></li>
+<li><a href="http://mobile.twitter.com/searches?q=%22House+of+Wax%22">House of Wax</a></li>
+<li><a href="http://mobile.twitter.com/searches?q=%22Club+Paradise%22">Club Paradise</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+<div id='map-container'>
+<div class='arrow'>
+<span class="imgsprite_arrow_gif"></span>
+</div>
+<div class='map-wrapper'>
+<div class='map-inner'></div>
+</div>
+<div class='close-link'><a href="javascript:void(0);">Close map</a></div>
+</div>
+
+<div class='footer'>
+<div class='geo-status'></div>
+<strong><a href="http://mobile.twitter.com/search/users">Find people</a></strong>
+-
+<strong><a href="http://support.twitter.com/groups/34-mobile">Help</a></strong>
+-
+<strong><a href="http://twitter.com/account/settings">Settings</a></strong>
+-
+<strong><a href="http://mobile.twitter.com/session/destroy">Sign out</a></strong>
+-
+<form action="http://mobile.twitter.com/settings/profile_images" class="profile_image" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="07890b5e262359501d95" /></div>
+<button class="link-button link-color" id="" type="submit">Images off</button>
+</form>
+<br />
+<br />
+View twitter in:
+<br />
+<strong><a href="http://mobile.twitter.com/settings/change_ui">Standard</a></strong>
+-
+Mobile
+<br />
+<br />
+&copy; 2011 Twitter
+</div>
+<script src="http://a1.twimg.com/twitter-mobile/f8a8d6a630246998ce61a6cf2ec10aa134af4537/assets/base.js" type="text/javascript"></script>
+</div>
+<!-- production -->
+</body>
+</html>
+"
+string(54) "http://twitter.com/bananaanb/status/112797115171872769"
+Sun, 11 Sep 2011 07:58:26 +0000 112 RT @SKYENICOLAS "Only nouveau riche would chop cocaine with a black Amex card" ~SN  TheMRK.com http://on.fb.me/lV6b8p posted successfully 512 kilobytes

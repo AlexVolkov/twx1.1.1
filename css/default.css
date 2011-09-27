@@ -1,0 +1,200 @@
+#addTaskDialog #navlist{margin:0px; padding:0px; border:0 none; border-width:0}
+#addTaskDialog #navlist li{display:inline; list-style-type:none; padding-right:10px}
+#addTaskDialog #navlist li a{color:#333; text-decoration:none; font-size:13px}
+#addTaskDialog #tabs1{border:0 none}
+#addTaskDialog #tabs1 #tabs-1, #addTaskDialog #tabs1 #tabs-2, #addTaskDialog #tabs1 #tabs-3, #addTaskDialog #tabs1 #tabs-4{margin:0px; padding:10px 0 0 10px; border-width:1px; min-height:300px;}
+#addTaskDialog #tabs1 #tabs-1 input.text, #addTaskDialog #tabs1 #tabs-2 input.text, #addTaskDialog #tabs1 #tabs-3 input.text, #addTaskDialog #tabs1 #tabs-4 input.text {width:445px}
+#addTaskDialog select{margin:10px 0 0}
+#addTaskDialog #tabs1 #tabs-1 textarea, #addTaskDialog #tabs1 #tabs-2 textarea{width:95%; height:200px; margin:10px auto 20px auto}
+#addTaskDialog{}
+#addTaskDialog .ui-widget-header{background:none; border:none;}
+#addTaskDialog .ui-tabs .ui-tabs-nav{padding:0}
+
+/*#dt_example ul li input, #editTask ul li input{display:inline; width:25px; text-align:left}*/
+#dt_example ul li input:button, #editTask ul li input:button{display:inline; width:300px; text-align:left}
+#dt_example ul, #editTask ul{color:#4E6CA3; list-style:none}
+#dt_example ul li, #editTask ul li{line-height:30px}
+#dt_example ul li label{display:inline; float:left; margin:1px 10px 0; text-align:right; width:240px}
+#dt_example #container{width:800px; margin:30px auto; padding:0}
+#dt_example #footer{margin:50px auto 0 auto; padding:0}
+#dt_example .big{font-size:1.3em; font-weight:bold; line-height:1.6em; color:#4E6CA3}
+#dt_example .spacer{height:20px; clear:both}
+#dt_example .clear{clear:both}
+
+
+
+
+.css_right{float:right}
+.css_left{float:left}
+.dataTables_wrapper{position:relative; clear:both; _height:302px; zoom:1}
+.dataTables_processing{position:absolute;
+                       top:50%;
+                       left:50%; width:250px; height:30px; margin-left:-125px; margin-top:-15px;
+                       padding:14px 0 2px 0; border:1px solid #ddd; text-align:center; color:#999; font-size:14px; background-color:white}
+.dataTables_length{width:40%; float:left}
+.dataTables_filter{float:right; text-align:right}
+.dataTables_info{width:20%; float:left}
+.dataTables_paginate{width:44px; *width:50px; float:right; text-align:right}
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next{height:19px; width:19px; margin-left:3px; float:left}
+.paginate_disabled_previous{background-image:url('../images/back_disabled.jpg')}
+.paginate_enabled_previous{background-image:url('../images/back_enabled.jpg')}
+.paginate_disabled_next{background-image:url('../images/forward_disabled.jpg')}
+.paginate_enabled_next{background-image:url('../images/forward_enabled.jpg')}
+table.display{margin:0 auto; clear:both; width:100%}
+table.display thead th{padding:3px 18px 3px 10px; border-bottom:1px solid black; font-weight:bold; cursor:pointer; *cursor:hand}
+table.display tfoot th{padding:3px 18px 3px 10px; border-top:1px solid black; font-weight:bold}
+table.display tr.heading2 td{border-bottom:1px solid #aaa}
+table.display td{padding:3px 10px; height:30px; font-size:85%;}
+table.display td.center{text-align:center}
+.sorting_asc{background:url('../images/sort_asc.png') no-repeat center right}
+.sorting_desc{background:url('../images/sort_desc.png') no-repeat center right}
+.sorting{background:url('../images/sort_both.png') no-repeat center right}
+.sorting_asc_disabled{background:url('../images/sort_asc_disabled.png') no-repeat centerright}
+.sorting_desc_disabled{background:url('../images/sort_desc_disabled.png') no-repeat centerright}
+table.display tr.odd.gradeA{background-color:#dfd}
+table.display tr.even.gradeA{background-color:#efe}
+table.display tr.odd.gradeC{background-color:#ddf}
+table.display tr.even.gradeC{background-color:#eef}
+table.display tr.odd.gradeX{background-color:#fdd}
+table.display tr.even.gradeX{background-color:#fee}
+table.display tr.odd.gradeU{background-color:#ddd}
+table.display tr.even.gradeU{background-color:#eee}
+tr.odd{background-color:#E2E4FF}
+tr.even{background-color:white}
+.dataTables_scroll{clear:both}
+.dataTables_scrollBody{*margin-top:-1px}
+.top, .bottom{padding:15px; background-color:#F5F5F5; border:1px solid #CCC; height:15px;}
+.top .dataTables_info, .bottom .dataTables_info{float:left}
+.clear{clear:both}
+.dataTables_empty{text-align:center}
+tfoot input{margin:0.5em 0; width:100%; color:#444}
+tfoot input.search_init{color:#999}
+td.group{background-color:#d1cfd0; border-bottom:2px solid #A19B9E; border-top:2px solid #A19B9E}
+td.details{background-color:#d1cfd0; border:2px solid #A19B9E}
+.example_alt_pagination div.dataTables_info{width:40%}
+.paging_full_numbers{width:400px; height:40px; margin: 0; font-size:80%}
+.paging_full_numbers span.paginate_button, .paging_full_numbers span.paginate_active{border:1px solid #aaa;
+                                                                                     -webkit-border-radius:5px; -moz-border-radius:5px; padding:2px 5px; margin:0 3px; cursor:pointer; *cursor:hand}
+.paging_full_numbers span.paginate_button{background-color:#ddd}
+.paging_full_numbers span.paginate_button:hover{background-color:#ccc}
+.paging_full_numbers span.paginate_active{background-color:#99B3FF}
+table.display tr.even.row_selected td{background-color:#B0BED9}
+table.display tr.odd.row_selected td{background-color:#9FAFD1}
+tr.odd td.sorting_1{background-color:#D3D6FF}
+tr.odd td.sorting_2{background-color:#DADCFF}
+tr.odd td.sorting_3{background-color:#E0E2FF}
+tr.even td.sorting_1{background-color:#EAEBFF}
+tr.even td.sorting_2{background-color:#F2F3FF}
+tr.even td.sorting_3{background-color:#F9F9FF}
+tr.odd.gradeA td.sorting_1{background-color:#c4ffc4}
+tr.odd.gradeA td.sorting_2{background-color:#d1ffd1}
+tr.odd.gradeA td.sorting_3{background-color:#d1ffd1}
+tr.even.gradeA td.sorting_1{background-color:#d5ffd5}
+tr.even.gradeA td.sorting_2{background-color:#e2ffe2}
+tr.even.gradeA td.sorting_3{background-color:#e2ffe2}
+tr.odd.gradeC td.sorting_1{background-color:#c4c4ff}
+tr.odd.gradeC td.sorting_2{background-color:#d1d1ff}
+tr.odd.gradeC td.sorting_3{background-color:#d1d1ff}
+tr.even.gradeC td.sorting_1{background-color:#d5d5ff}
+tr.even.gradeC td.sorting_2{background-color:#e2e2ff}
+tr.even.gradeC td.sorting_3{background-color:#e2e2ff}
+tr.odd.gradeX td.sorting_1{background-color:#ffc4c4}
+tr.odd.gradeX td.sorting_2{background-color:#ffd1d1}
+tr.odd.gradeX td.sorting_3{background-color:#ffd1d1}
+tr.even.gradeX td.sorting_1{background-color:#ffd5d5}
+tr.even.gradeX td.sorting_2{background-color:#ffe2e2}
+tr.even.gradeX td.sorting_3{background-color:#ffe2e2}
+tr.odd.gradeU td.sorting_1{background-color:#c4c4c4}
+tr.odd.gradeU td.sorting_2{background-color:#d1d1d1}
+tr.odd.gradeU td.sorting_3{background-color:#d1d1d1}
+tr.even.gradeU td.sorting_1{background-color:#d5d5d5}
+tr.even.gradeU td.sorting_2{background-color:#e2e2e2}
+tr.even.gradeU td.sorting_3{background-color:#e2e2e2}
+.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted{background-color:#ECFFB3}
+.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted{background-color:#E6FF99}
+.ex_highlight_row #example tr.even:hover{background-color:#ECFFB3}
+.ex_highlight_row #example tr.even:hover td.sorting_1{background-color:#DDFF75}
+.ex_highlight_row #example tr.even:hover td.sorting_2{background-color:#E7FF9E}
+.ex_highlight_row #example tr.even:hover td.sorting_3{background-color:#E2FF89}
+.ex_highlight_row #example tr.odd:hover{background-color:#E6FF99}
+.ex_highlight_row #example tr.odd:hover td.sorting_1{background-color:#D6FF5C}
+.ex_highlight_row #example tr.odd:hover td.sorting_2{background-color:#E0FF84}
+.ex_highlight_row #example tr.odd:hover td.sorting_3{background-color:#DBFF70}
+table.KeyTable td{border:3px solid transparent}
+table.KeyTable td.focus{border:3px solid #36F}
+table.display tr.gradeA{background-color:#efe}
+table.display tr.gradeC{background-color:#ddf}
+table.display tr.gradeX{background-color:#fdd}
+table.display tr.gradeU{background-color:#ddd}
+
+
+p.text{margin:-19px 0 0; padding:0; color:#333}
+a.box{position:fixed; color:#333; margin:0 auto; padding:12px 12px 12px 52px; text-decoration:none; top:0; left:20%; width:700px}
+.success{background:url("../i/success.png") no-repeat scroll 10px 50%#E8FFCA; border:1px solid #B3DC7C; z-index:999px}
+.corners{-moz-border-radius:8px 8px 8px 8px}
+.close:hover{background:url("../i/close_box.png") no-repeat scroll left bottomtransparent}
+.close{background:url("../i/close_box.png") no-repeat scroll left toptransparent; float:right; height:9px; margin:6px 0; width:9px}
+.warning{background:url("../i/warning.png") no-repeat scroll 10px 50%#FFF7CB; border:1px solid #EFDC75; z-index:999px}
+.error{background:url("../i/error.png") no-repeat scroll 10px 50% #FFD6D6; border:1px solid #EBB1B1; z-index:999px}
+.info{background:url("../i/info.png") no-repeat scroll 10px 50% #E4F5FD; border:1px solid #AFDBEE}
+#dialog-confirm p{  display: block; height: 25px; padding: 22px 0 10px 50px;}
+#icons{float:left}
+#icons img{display:block; margin:5px 0px 7px 5px; width:48px; height:48px; float:left; border:1px solid #ececec; -moz-border-radius:5px}
+#icons img:hover{border:1px solid #cecece}
+.test img{margin:0; padding:0; cursor:pointer}
+.stop{ background: url("../i/ic-actions.png") no-repeat scroll -92px -1px transparent;
+       display: block;
+       float: left;
+       height: 24px;
+       margin: 0;
+       padding: 0;
+       text-indent: -9999px;
+       width: 23px;}
+.stop:hover{ background: url("../i/ic-actions.png") no-repeat scroll -92px -25px transparent;}
+.run{ background: url("../i/ic-actions.png") no-repeat scroll 0px -1px transparent;
+       display: block;
+       float: left;
+       height: 24px;
+       margin: 0;
+       padding: 0;
+       text-indent: -9999px;
+       width: 23px;}
+.run:hover{ background: url("../i/ic-actions.png") no-repeat scroll 0px -25px transparent;}
+.edit{ background: url("../i/ic-actions.png") no-repeat scroll -46px -1px transparent;
+       display: block;
+       float: left;
+       height: 24px;
+       margin: 0 0 0 5px;
+       padding: 0;
+       text-indent: -9999px;
+       width: 23px;}
+.edit:hover{ background: url("../i/ic-actions.png") no-repeat scroll -46px -25px transparent;}
+.delete{ background: url("../i/ic-actions.png") no-repeat scroll -23px -1px transparent;
+       display: block;
+       float: left;
+       height: 24px;
+       margin: 0 0 0 5px;
+       padding: 0;
+       text-indent: -9999px;
+       width: 23px;}
+.delete:hover{ background: url("../i/ic-actions.png") no-repeat scroll -23px -25px transparent;}
+.view_log{ background: url("../i/ic-actions.png") no-repeat scroll -69px -1px transparent;
+       display: block;
+       float: left;
+       height: 24px;
+       margin: 0 0 0 5px;
+       padding: 0;
+       text-indent: -9999px;
+       width: 23px;}
+.view_log:hover{ background: url("../i/ic-actions.png") no-repeat scroll -69px -25px transparent;}
+#editTask ul li label{display:inline; margin:1px 10px 0; text-align:right; width:130px}
+#editTask ul li textarea{ width:560px; height:280px}
+.cron{ display: block; margin: 3px 0; width: 100%;}
+.cron input{vertical-align: bottom;}
+#cronset{margin: 10px 15px 5px 0; display:none; padding:5px; border: 1px solid aqua;}
+#cronset legend{font-weight: bold; font-size: 1.2em;}
+#setts li small {margin:0 0 0 10px; font-size:0.7em;}
+
+.startall{ background: url("../i/play.png") no-repeat scroll transparent;}
+.break{ background: url("../i/button_stop.png") no-repeat scroll transparent;}
+
