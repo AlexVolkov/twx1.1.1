@@ -55,7 +55,7 @@ class Twitter {
         
         //sleep(3);
         //$f = fopen("./tnp.txt", "w+");
-        $needle = preg_split("!(http:(.*?) |http:(.*?)$)!si", $needle);
+        $needle = preg_split("!(http:(.*?) |http:(.*?)$|#(.*?) |@(.*?) )!si", $needle);
         //var_dump($needle);
         foreach ($needle as $n) {
             if ($needlelen < strlen($n)) {

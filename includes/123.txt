@@ -1,0 +1,8 @@
+Mon, 03 Oct 2011 06:21:30 +0000 125 start task id 125 768 kilobytes
+Mon, 03 Oct 2011 06:21:30 +0000 125 using proxy is on, use short services is on, loading accounts with error is off, shorters is on 768 kilobytes
+string(115) "SELECT * FROM `9a20cd9d6421ed2d6d30d38172f6a237_accounts` WHERE error='good' OR error='' ORDER BY RAND() LIMIT 500;"
+Mon, 03 Oct 2011 06:21:30 +0000 125 total accounts - 500 1 megabytes
+Mon, 03 Oct 2011 06:21:30 +0000 125 task type is tweets 1 megabytes
+string(121) "@SKYENICOLAS #WhatYouShouldKnowAboutMe I'M ONE OF THE 99% JUST LIKE YOU #OccupyWallStreet cos "Dignity Has No Price!" ~SN"
+Mon, 03 Oct 2011 06:21:30 +0000 125 formed 1 items in post array 1 megabytes
+Mon, 03 Oct 2011 06:21:30 +0000 125 using dudemonke:9nbz9zngx 0/500 1 megabytes

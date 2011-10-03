@@ -104,7 +104,6 @@ endforeach;
                         "Add": function() {
                             $( this ).dialog( "close" );
                             var list = "act=add&type=task&" + $('form').serialize();
-			    //document.write(list);
                             $.post("./includes/actions.php",  list,
                             function(data){
                                 $("#showMessage").html(data);
@@ -147,7 +146,7 @@ endforeach;
                                     $('#showMessage').fadeOut('slow', function() {
                                     });
 
-                                },30000);
+                                },3000);
 
                             });
 
