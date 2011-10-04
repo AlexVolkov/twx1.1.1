@@ -112,7 +112,8 @@ class Job {
         $outs = array_slice($outs[1],1);
         $outss = array_slice($outss[1],1);
         $arr['url'] = $outs;
-        $arr['lastmod'] = array_slice($out[1],1);
+        //$arr['lastmod'] = array_slice($out[1],1);
+        $arr['lastmod'] = $out;
         $arr['title'] = $outss;
         print_r($arr);
         $comArr = unserialize($file);
