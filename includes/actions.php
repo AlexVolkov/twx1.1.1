@@ -2,7 +2,8 @@
 
 error_reporting(1);
 
-class Actions {
+class Actions
+{
 
     public $post;
     private $db;
@@ -13,8 +14,9 @@ class Actions {
     private $tableCols;
     private $tableColsMarker;
 
-    function __construct() {
-        try { 
+    function __construct()
+    {
+        try {
             require_once './info.php';
             require_once './shorts.php';
             $class_methods = get_class_methods('Shorteners');
@@ -31,7 +33,8 @@ class Actions {
         }
     }
 
-    public function addSome($where, $list) {
+    public function addSome($where, $list)
+    {
         $list = explode("\n", $list);
         foreach ($list as $num => $id):
             if (strlen($id) > 1):
@@ -55,7 +58,8 @@ class Actions {
         echo $this->ShowWindow($where . " added <br/>" . $mess, "success");
     }
 
-    public function deleteSome($where, $list) { //var_dump($list);
+    public function deleteSome($where, $list)
+    { //var_dump($list);
         if (!$list) {
             echo $this->ShowWindow("Choose something to delete", "error");
             return false;
@@ -63,10 +67,10 @@ class Actions {
 
         if ($list == '-1') {
             if ($this->db->query("DELETE FROM `" . $this->prefix . "_" . $where . "` WHERE 1")) {
-		/*@unlink('../cronjobs/' . $this->uid . '_'.$this->id.'.cron');
-		@unlink('../tmp/'. $this->id. '_'. $this->uid . '.txt');
-		@unlink('../tmp/'. $job->id. '_'. $job->uid . '-links.txt');
-		@unlink('../cookies/'.$this->id.'_cookie.txt');*/
+                /*@unlink('../cronjobs/' . $this->uid . '_'.$this->id.'.cron');
+            @unlink('../tmp/'. $this->id. '_'. $this->uid . '.txt');
+            @unlink('../tmp/'. $job->id. '_'. $job->uid . '-links.txt');
+            @unlink('../cookies/'.$this->id.'_cookie.txt');*/
                 echo $this->ShowWindow("All " . $where . " deleted", "success");
                 return true;
             } else {
@@ -80,12 +84,12 @@ class Actions {
             $ids = explode("|", $list);
             foreach ($ids as $id) :
                 if (strlen($id) > 0) :
-		    
+
                     if ($this->db->query("DELETE FROM `" . $this->prefix . "_" . $where . "` WHERE `id` = $id")) {
-			@unlink('../cronjobs/' . $this->prefix . '_'.$id.'.cron');
-			@unlink('../tmp/'. $id. '_'. $this->prefix . '.txt');
-			@unlink('../tmp/'. $id. '_'. $this->prefix . '-links.txt');
-			@unlink('../cookies/'.$id.'_cookie.txt');
+                        @unlink('../cronjobs/' . $this->prefix . '_' . $id . '.cron');
+                        @unlink('../tmp/' . $id . '_' . $this->prefix . '.txt');
+                        @unlink('../tmp/' . $id . '_' . $this->prefix . '-links.txt');
+                        @unlink('../cookies/' . $id . '_cookie.txt');
                         echo $this->ShowWindow($where . " deleted", "success");
                     } else {
                         echo $this->ShowWindow("Problems with database", "error");
@@ -97,7 +101,8 @@ class Actions {
         }
     }
 
-    public function deleteMass($where, $list) { //var_dump($list);
+    public function deleteMass($where, $list)
+    { //var_dump($list);
         if (!$list) {
             echo $this->ShowWindow("Choose something to delete", "error");
             return false;
@@ -134,7 +139,8 @@ class Actions {
         }
     }
 
-    public function startMass($list) {
+    public function startMass($list)
+    {
         if (!$list) {
             echo $this->ShowWindow("Choose something to start", "error");
             return false;
@@ -156,7 +162,8 @@ class Actions {
         echo $this->ShowWindow("All tasks started", "success");
     }
 
-    public function stopMass($list) {
+    public function stopMass($list)
+    {
         if (!$list) {
             echo $this->ShowWindow("Choose something to stop", "error");
             return false;
@@ -178,7 +185,8 @@ class Actions {
         echo $this->ShowWindow("All tasks stopped", "success");
     }
 
-    public function addMassFeed($list) {
+    public function addMassFeed($list)
+    {
         //var_dump($list);
         $mask = substr(md5(date("r")), 0, 7);
         $sql = ("INSERT INTO `cust_tables`.`" . $this->prefix . "_drips` (
@@ -229,7 +237,8 @@ class Actions {
         $this->db->query($sql); //execute query to add feed in tasks
     }
 
-    public function updateSome($where, $id, $new) {
+    public function updateSome($where, $id, $new)
+    {
         if ($this->db->query("UPDATE `" . $this->prefix . "_" . $where . "` SET `pair` = '$new' WHERE `id` = $id")) {
             //echo $this->ShowWindow($where . " deleted", "success");
         } else {
@@ -238,7 +247,8 @@ class Actions {
         }
     }
 
-    public function export($what) {
+    public function export($what)
+    {
         $tmp = $this->db->query("SELECT * FROM `" . $this->prefix . "_" . $what . "`")->fetchAll(PDO::FETCH_ASSOC);
         header('Content-type: text/plain');
         foreach ($tmp as $str) {
@@ -246,9 +256,11 @@ class Actions {
         }
     }
 
-    private function TweetCheck($text) {
+    private function TweetCheck($text)
+    {
         preg_match("/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/", $text, $out);
-        if (strlen($out[0]) > 5) :
+        if (strlen($out[0]) > 5
+        ) :
             //link found in text
             $text = trim(preg_replace("!" . preg_quote($out[0]) . "!si", "", $text));
             $wordLimit = 140 - strlen($out[0]);
@@ -261,71 +273,73 @@ class Actions {
         return trim($text);
     }
 
-    public function MultiVal($str) {
+    public function MultiVal($str)
+    {
         $str = explode("\n", $str);
         foreach ($str as $s) {
             $mdata = $this->mashUp($s);
             foreach ($mdata as $m)
                 $rs .= $m . "\n";
-                if(strlen($rs) > 2){
-                    $rs = preg_replace("/  /"," ", $rs);
-                    echo ($rs);
-                }
+            if (strlen($rs) > 2) {
+                $rs = preg_replace("/  /", " ", $rs);
+                echo ($rs);
+            }
         }
         //echo ($rs);
         //var_dump($str);
     }
 
-    private function mashUp($str) {
+    private function mashUp($str)
+    {
         $limit = 1000;
 
-preg_match_all("/{(.*?)}/", $str, $out);
-$headArr = $out[1];
+        preg_match_all("/{(.*?)}/", $str, $out);
+        $headArr = $out[1];
 
-for($i = 0; $i < sizeof($headArr); $i++)
-{
-    $valArr = preg_split("/(\||,|;)/", $headArr[$i]);
-    ($i == 0)? $sTotal = count($valArr) : $sTotal = $sTotal * count($valArr);
-    $varr['text'][] = $valArr; //write down elements in each separate array
-    $varr['change'][] = $sTotal;//write down changing sequence
-}
-
-if($sTotal > $limit)
-	{
-		$sTotal = $limit;
-	}
-
-for($i = 0; $i < $sTotal; $i++){ //fill down array with blank values
-    $strings[$i] = $str;
-}
-
-$limitCheck = 0;
-
-foreach($headArr as $num => $val):
-	   $currPos = 0;
-	   $sChange = $sTotal / $varr['change'][$num]; //determine changing number
-	   $elementPos = 0; //number of element, which will be inserted instead {}
-	   $elemArr = explode("|", $val);
-
-	   for($qw = 0; $qw < $sTotal; $qw++)
+        for ($i = 0; $i < sizeof($headArr); $i++)
         {
-		   		if($currPos >= $sChange){
-        				$elementPos++;
-        				$currPos = 0;
-        			}
-
-		   		if($elementPos >= (count($elemArr)) ){
-		   			$elementPos = 0;
-		   		}
-		   		$strings[$qw] = preg_replace("!".preg_quote("{".$val."}")."!si", $elemArr[$elementPos], $strings[$qw], 1);
-		   		$currPos++;
+            $valArr = preg_split("/(\||,|;)/", $headArr[$i]);
+            ($i == 0) ? $sTotal = count($valArr) : $sTotal = $sTotal * count($valArr);
+            $varr['text'][] = $valArr; //write down elements in each separate array
+            $varr['change'][] = $sTotal; //write down changing sequence
         }
 
-endforeach;
-return($strings);
+        if ($sTotal > $limit) {
+            $sTotal = $limit;
+        }
+
+        for ($i = 0; $i < $sTotal; $i++) { //fill down array with blank values
+            $strings[$i] = $str;
+        }
+
+        $limitCheck = 0;
+
+        foreach ($headArr as $num => $val):
+            $currPos = 0;
+            $sChange = $sTotal / $varr['change'][$num]; //determine changing number
+            $elementPos = 0; //number of element, which will be inserted instead {}
+            $elemArr = explode("|", $val);
+
+            for ($qw = 0; $qw < $sTotal; $qw++)
+            {
+                if ($currPos >= $sChange) {
+                    $elementPos++;
+                    $currPos = 0;
+                }
+
+                if ($elementPos >= (count($elemArr))) {
+                    $elementPos = 0;
+                }
+                $strings[$qw] = preg_replace("!" . preg_quote("{" . $val . "}") . "!si", $elemArr[$elementPos], $strings[$qw], 1);
+                $currPos++;
+            }
+
+        endforeach;
+        return ($strings);
     }
 
-    private function FeedCheck($url) {
+    private function FeedCheck($url)
+    {
         preg_match("/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/", $url, $out);
         if (strlen($out[0]) > 5) {
             return $url;
@@ -334,8 +348,9 @@ return($strings);
         }
     }
 
-    public function addSomeTask($data) { 
-//var_dump($data);
+    public function addSomeTask($data)
+    {
+        //var_dump($data);
         $tname = htmlspecialchars(strip_tags($data['tw_name']));
 
         if (strlen($data['tweets']) > 1) {
@@ -348,14 +363,14 @@ return($strings);
 (`id` , `task_name`,`source` ,`used_accounts` ,`ordering` ,`progress` ,`content` ,`status` ,`shortener` ,`cronIntval`)VALUES 
 (NULL,'$tname', 'tweets', '$data[numaccs]', '$data[radio]', '0', '$res', 'stop', '$data[shortener]', '');");
             //$tname = htmlspecialchars(strip_tags($data['tw_name'])); 
-//var_dump($sql);
+            //var_dump($sql);
             //$res = $this->db->prepare($sql);
             $this->db->query($sql);
             //$res->execute();
             $this->ShowWindow("tweets added", "success");
         }
         if (strlen($data['feeds']) > 1) {
-//var_dump($data['tw_name']);
+            //var_dump($data['tw_name']);
 
             $feeds = explode("\n", $data['feeds']);
             foreach ($feeds as $text):
@@ -393,7 +408,8 @@ return($strings);
         }
     }
 
-    public function editDrip($id) {
+    public function editDrip($id)
+    {
         $sql = ("SELECT `mask` FROM `" . $this->prefix . "_drips` WHERE `id` = '$id' LIMIT 1;");
         $mask = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         //var_dump($mask[0]);
@@ -405,7 +421,8 @@ return($strings);
 	      </form>";
     }
 
-    private function GetColumns($where) {
+    private function GetColumns($where)
+    {
         if ($where)
             $this->tableColsMarker = $where;
 
@@ -413,7 +430,8 @@ return($strings);
         $this->tableCols = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function LoadForm($where, $cond, $exclude = NULL) { //where - which table, $cond = where contdition
+    public function LoadForm($where, $cond, $exclude = NULL)
+    { //where - which table, $cond = where contdition
         //var_dump($where, $id);
         $sql = ("SELECT * FROM `" . $this->prefix . "_" . $where . "` WHERE $cond LIMIT 1;");
         //echo $sql;
@@ -429,7 +447,7 @@ return($strings);
         //$what_to_hide = array_merge($what_to_hide, $exclude);
         //var_dump($what_to_hide);
         foreach ($col_data as $field_num => $field_val) {
-            if ((in_array($field_val["Field"], $what_to_show)) AND (!in_array($field_val["Field"], $exclude) )) {
+            if ((in_array($field_val["Field"], $what_to_show)) AND (!in_array($field_val["Field"], $exclude))) {
 
                 if ($field_val['Field'] == "shortener") {
                     $shortsers = "<li><label>Select shortener:</label><select name=\"shortener\"> " . $this->list . "</select></li>";
@@ -458,7 +476,7 @@ return($strings);
                     continue;
                 }
 
-//var_dump($field_val);
+                //var_dump($field_val);
                 preg_match("!char!si", $field_val['Type'], $out);
                 if ($out[0]) {
                     $length = preg_replace("([^0-9])", "", $field_val['Type']);
@@ -502,11 +520,13 @@ return($strings);
         }
     }
 
-    public function editTask($id) {
+    public function editTask($id)
+    {
         $sql = ("SELECT * FROM `" . $this->prefix . "_tasks` WHERE `id` = '$id' LIMIT 1;");
         $tmp = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
-        //print_r($tmp);
+        //print_r($tmp); die();
+        
 
         $valInt = $tmp[0]['cronIntval'];
         $shVal = $tmp[0]['shortener'];
@@ -561,10 +581,11 @@ return($strings);
         echo $formData;
     }
 
-    public function save($data, $where, $exclude = NULL) {   //cored
+    public function save($data, $where, $exclude = NULL)
+    { //cored
         unset($str);
         $data = $this->splitArray($data);
-        //var_dump($data);
+        //var_dump($data);die();
 
         $marker = NULL;
 
@@ -587,12 +608,14 @@ return($strings);
 
         foreach ($col_data as $d) {
             if (array_key_exists($d["Field"], $data) AND (!in_array($d["Field"], $exclude))) {
-                $str .= "`" . $d["Field"] . "` = '" . $data[$d["Field"]] . "', ";
+                $str .= "`" . $d["Field"] . "` = '" . addslashes($data[$d["Field"]]) . "', ";
             }
         }
         $str = substr($str, 0, -2) . " ";
         $sql = "UPDATE `" . $this->prefix . "_" . $where . "` SET " . $str . " WHERE `" . $this->prefix . "_" . $where . "`.`" . $f . "` = '" . $marker . "';";
-        //echo $sql;
+        //echo $sql; die();
+        
+        
         $tmp = $this->db->query($sql);
         if ($tmp) {
             $this->ShowWindow("succesfully updated", "success");
@@ -601,7 +624,8 @@ return($strings);
         }
     }
 
-    private function splitArray($data) {
+    private function splitArray($data)
+    {
         //var_dump($data);
         foreach ($data as $d) {
             $tmpAr1[] = $d["name"];
@@ -611,7 +635,8 @@ return($strings);
         return array_combine($tmpAr1, $tmpAr2);
     }
 
-    public function saveData($data) {
+    public function saveData($data)
+    {
         //var_dump($data);
         $id = $data[2][value];
         foreach ($data as $num => $string) {
@@ -636,19 +661,20 @@ return($strings);
             endif;
 
             $sql = ("UPDATE `" . $this->prefix . "_tasks` SET `$string[name]` = '" . $string['value'] . "' WHERE `id` = '$id';");
-//echo $sql;
+            //echo $sql;
             $tmp = $this->db->query($sql);
         }
         $this->ShowWindow("task updated", "success");
     }
 
-    public function updateConfig($data) {
+    public function updateConfig($data)
+    {
 
         $this->db->query("UPDATE `" . $this->prefix . "_config` SET `opt_value` = 'off' WHERE 1 = 1;");
         $this->db->query("UPDATE `" . $this->prefix . "_config` SET `opt_value` = 'on' WHERE `opt_name` = 'use_proxy';");
         foreach ($data as $num => $id):
-            if( $id['name'] == "refresh_task_table_intval"){
-                if( ($id['value'] == '0') OR ($id['value'] == '') )
+            if ($id['name'] == "refresh_task_table_intval") {
+                if (($id['value'] == '0') OR ($id['value'] == ''))
                     $id['value'] = 10;
             }
             $sql = ("UPDATE `" . $this->prefix . "_config` SET `opt_value` = '$id[value]' WHERE `opt_name` = '$id[name]';");
@@ -663,8 +689,8 @@ return($strings);
     }
 
 
-
-    public function ShowWindow($text, $class) {
+    public function ShowWindow($text, $class)
+    {
         echo "<a href=\"#\" class=\"box corners " . $class . "\" id=\"message\">
 
 			" . $text . "
@@ -672,16 +698,17 @@ return($strings);
     }
 
 }
+
 //var_dump($_POST);
 
 $act = new Actions();
 //var_dump($act);
 //echo 123;
 //die();
-if(isset($_POST['filename'])){
-    $c = file_get_contents("../uploads/".$_POST['filename']);
+if (isset($_POST['filename'])) {
+    $c = file_get_contents("../uploads/" . $_POST['filename']);
     $_POST['tweets'] = $c;
-    unlink("../uploads/".$_POST['filename']);
+    unlink("../uploads/" . $_POST['filename']);
 }
 
 if ($_GET['act'] == 'export') {
@@ -700,7 +727,7 @@ if (!isset($_POST)) {
     die();
 }
 
-if ($_POST['act'] == 'add') { 
+if ($_POST['act'] == 'add') {
     switch ($_POST['type']) {
         case("accs"):
             $act->addSome('accounts', $_POST['data']);

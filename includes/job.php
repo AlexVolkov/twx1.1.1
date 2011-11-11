@@ -35,7 +35,7 @@ class Job {
 	
         @unlink('../tmp/' . $this->id . '_' . $this->uid . '.txt');
 	@unlink('../tmp/' . $this->id . '_' . $this->uid .'-links.txt');
-        $sql = "SELECT `source`,`used_accounts`,`ordering`, `content`, `shortener` FROM `".$this->uid."_tasks` WHERE `id` = '$this->id';";
+        $sql = "SELECT `source`,`used_accounts`,`ordering`, `content`, `shortener` FROM `".$this->uid."_tasks` WHERE `id` = '$this->id';"; //var_dump($sql);
         $task = $this->db->query($sql)->fetch(PDO::FETCH_ASSOC);
         $sql = "SELECT `opt_name`, `opt_value` FROM `".$this->uid."_config`";
         $config = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
@@ -44,7 +44,7 @@ class Job {
         $this->useProxy = $config[1]['opt_value'];
         $this->useShort = $config[0]['opt_value'];
         $this->config = $config;
-        $this->task = $task;
+        $this->task = $task; //var_dump($task);
         $this->Logging('start task id '.$this->id);
         $this->Logging('using proxy is '.$this->useProxy
                 . ', use short services is '.$this->useShort
@@ -52,11 +52,12 @@ class Job {
         return $this->task;
     }
     public function LoadAccs() {
+        //var_dump($this->task);
         ($this->accsError == "on")? $errors = "1" : $errors = "error='good' OR error=''";                          //errors
         ($this->task['used_accounts'] == "0")? $limit = "" : $limit = "LIMIT " . $this->task['used_accounts'];      //num of accounts to use in
         ($this->task['ordering'] == "order")? $order = "" : $order = "ORDER BY RAND()";                             //ordering
         $sql = "SELECT * FROM `".$this->uid."_accounts` WHERE $errors $order $limit;";
-        var_dump($sql);
+        //var_dump($sql);
         $r = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         $this->accounts = $r;//not needed
         $this->Logging('total accounts - '. count($this->accounts));
@@ -113,13 +114,13 @@ class Job {
         $outss = array_slice($outss[1],1);
         $arr['url'] = $outs;
         //$arr['lastmod'] = array_slice($out[1],1);
-        $arr['lastmod'] = $out;
+        $arr['lastmod'] = $out[1];
         $arr['title'] = $outss;
-        print_r($arr);
+        //print_r($arr); die();
         $comArr = unserialize($file);
-        //print_r($comArr);
+        //print_r($comArr); //die();
         $compare = array_diff_assoc($arr['lastmod'], $comArr['lastmod']);
-        print_r($compare);
+        //print_r($compare); die();
         foreach($compare as $num=>$val) {
             $r['url'][] = $arr['url'][$num];
             $r['lastmod'][] = $arr['lastmod'][$num];
@@ -213,6 +214,7 @@ $job = new Job();
 $twitter = new Twitter();
 $short = new Shorteners();
 
+
 //$job->id = $argv[1];    //or set to post var
 if($_POST){
     $job->id = urlencode($_POST['id']);
@@ -234,13 +236,15 @@ if($act == 'stop'){
     $twitter->id = $job->uid;
 
 $job->verbose = true;
-$job->judge = 'http://alexvolkov.ru/postcheck.php';
+//$job->judge = 'http://alexvolkov.ru/postcheck.php';
+$job->judge = 'http://clients.twindexator.com/service/postcheck.php';
 $job->tryProxyCount = 3;
 
 $job->ChangeStatus('start');
 $job->ChangeProgress('0', TRUE);
 $task = $job->LoadTask();
 $accs = $job->LoadAccs();
+
 $cht = 0;                   //total progress
 $succC = 0;                 //succesfull operation, int
 //var_dump($task["shortener"]);
@@ -356,7 +360,7 @@ if(($task['source'] == 'feeds') OR ($task['source'] == 'tweets')){
 $b = true;  // set on loop
 $m = 0;     //compare proxy counts with this in
 //forced proxy enabling
-
+//echo 321;
 $job->useProxy = 'on';
 //var_dump($job->useProxy);
 ($job->useProxy == 'on') ? $a = true : $a = false;  //enable or disable loop repeating
@@ -389,7 +393,8 @@ foreach($accs as $cht=>$acc):
             $p = $job->LoadProxy();
             $job->Logging('proxy '.$p);
             $twitter->proxy = $p;
-    	    //var_dump($p);
+    	    var_dump($p);
+            //echo 123;
         }
         $lg = $twitter->LogIn();
 	//var_dump($lg);

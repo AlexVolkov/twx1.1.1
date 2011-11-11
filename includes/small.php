@@ -261,30 +261,4 @@ class Twitter {
 
 }
 
-/*
-  $accounts = file('./accs.txt');
-  while(1 < 2){
-  shuffle($accounts);
-
-  $pair = $accounts[0];
-  //$pair = 'plazaelonl:12c1vg9zz';
-  echo $pair."\r\n";
-
-  $twitter = new Twitter();
-  $twitter->pair = $pair;
-  $twitter->tweet = 'RT @alexvolkov Watchdog для своих скриптов или проверка состояния процесса http://goo.gl/9ECq';
-  $lg = $twitter->LogIn();
-  var_dump($lg); die();
-  if($lg)
-  $post = $twitter->Post();
-  var_dump($post);
-  //if($post) {
-  //  $twitter->retweet = 'http://twitter.com/AlexVolkov/status/12047923873316864';
-  //   $rt = $twitter->ReTweet();
-  //   var_dump($rt);
-  //}
-  //$twitter->follow = 'AlexVolkov';
-  //echo $twitter->Follow();
-  }
- */
 ?>
