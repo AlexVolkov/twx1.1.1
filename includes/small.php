@@ -69,7 +69,7 @@ class Twitter {
         //fwrite  ($f, $haystack);
         //fclose($f);
         preg_match_all("!<a href=\"(.*?)\" class=\"status_link!", $haystack, $yout);
-        $needle = addcslashes($needle, "/\+\!\?\)\(");
+        $needle = addcslashes($needle, "/\+\!\?\)\(\$");
         $needle = trim(preg_replace("!(http:(.*?) |http:(.*?)$)!si", "", $needle));
         $needle = preg_replace("!\#(.*?) !si", "", $needle);
         $needle = preg_replace("!@(.*?) !si", "", $needle);
@@ -77,6 +77,7 @@ class Twitter {
 
         //var_dump($haystack);
         //var_dump($needle);
+        //var_dump($yout);
         
         if (@$out[0]) {
             return 'http://twitter.com' . $yout[1][0];
